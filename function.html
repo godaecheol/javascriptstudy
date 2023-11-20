@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert</title>
+    <link rel="stylesheet" href="Alert.css">
+</head>
+<body>
+    
+    <div class="alert-box" id="alert">Alert 박스</div>
+    <button onclick="block()">onclick</button>
+    <button onclick="none()"> 닫기 </button>
+
+    <script>
+       function none(){
+        document.getElementById('alert').style.display = 'none';
+       }
+
+       function block() {
+        document.getElementById('alert').style.display = 'block';
+       }
+    </script>
+
+</body>
+</html>
