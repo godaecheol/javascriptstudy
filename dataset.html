@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li data-img="apple.jpg">사과</li>
+        <li data-img="banana.jpg">바나나</li>
+        <h2>과일이름</h2>
+        <img width="200px" src="" alt="이미지">
+    </ul>
+    <script>
+        let lilist = document.querySelectorAll('li');
+        let img = document.querySelector('img');
+        let h2 = document.querySelector('h2');
+
+        lilist[0].addEventListener('click', function(event){
+            console.log(event.target.dataset.img);
+            img.setAttribute('src',event.target.dataset.img);
+            h2.textContent = event.target.textContent;
+        })
+        lilist[1].addEventListener('click', function(event){
+            console.log(event.target.dataset.img);
+            img.setAttribute('src',event.target.dataset.img)
+            h2.textContent = event.target.textContent;
+        })
+    </script>
+</body>
+</html>
