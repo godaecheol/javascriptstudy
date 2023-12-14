@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse-event</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .rectangle{
+            border: 1px solid black;
+            width: 300px;
+            height: 150px;
+            background-color: green;
+        }
+    </style>
+    <div class="rectangle"></div>
+    <script>
+        let rectangle = document.querySelector('.rectangle');
+
+        rectangle.addEventListener('mousedown',function(event){
+            // console.log('mousedown')
+            console.log('clientX:', event.clientX , 'clientY:' ,event.clientY);
+        });
+
+        // rectangle.addEventListener('mouseup',function(event){
+        //     console.log('mouseup')
+        // })
+
+        // rectangle.addEventListener('mouseenter',function(event){
+        //     console.log('mouseenter')
+        // })
+
+        // rectangle.addEventListener('mouseleave',function(event){
+        //     console.log('mouseleave')
+        // })
+
+        // rectangle.addEventListener('mousemove',function(event){
+        //     console.log('mousemove')
+        // })
+    </script>
+</body>
+</html>
