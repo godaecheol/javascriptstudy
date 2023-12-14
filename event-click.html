@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+</head>
+<body>
+    <button onclick="alert('hellow')">인라인 이벤트</button>
+    <button class="btn1">프로퍼티 리스너</button>
+    <button class="btn2">addEventListener</button>
+    <script>
+        let btn1 = document.querySelector(".btn1");
+        let btn2 = document.querySelector('.btn2');
+        btn1.onclick = function(){
+            alert('hellow');
+        }
+        btn2.addEventListener('click',event1);
+        function event1(){
+            alert('hellow');
+        }
+        
+        // 이벤트지우기
+        // btn2.removeEventListener('click',event1);
+    </script>
+</body>
+</html>
